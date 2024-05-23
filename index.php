@@ -1,0 +1,110 @@
+<?php
+session_start();
+include("connection.php");
+include("functions.php");
+$user_data = check_login($con);
+?> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h>Welcome to E-commerce Development</h>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu bar</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="product.html">our product</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <ul>
+            <li> <strong>E-Commerce Development</strong></li>
+            <marque><b><h1 style="color: rgb(87, 232, 15);">Welcome to E-commerce Development
+            </h1></b></marque> 
+            <li onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="container22">
+        <div class="image-container22">
+            <img src="e1.jpg" alt="Image" class="resized-image22">
+        </div>
+      </div>
+      <div class="container1">
+        <div class="text-container">
+            <p><br>Your e-commerce website doesn’t have the restrictions that come<br>with running a brick-and-mortar establishment. The website gives you the flexibility
+                <br> to operate your store on your terms. You can process orders wherever you are                <br>correctlyour website helps to show
+                <br> or let automated tools do the heavy lifting for you.
+                <br>An e-commerce store is a store in every way. But the cost of ownership isn’t anything  <br>close to what’s required for a physical retail shop. You save time,
+                <br>money, and a lot of extra hassle when you operate an e-commerce website, such as reduced
+                <br> overhead costs, no rent and utilities to pay, and a smaller team to manage. With reduced costs,<br> you can allocate more resources to other areas of your business to help it grow, 
+                whether it’s marketing or scaling your business.</p>
+            </div>
+            <div class="image-container1">
+                <img src="e2.png" alt="Image" class="resized-image1">
+            </div>
+      </div>
+      <div class="container">
+        <div class="box">
+            <h2>Important functions for an e-commerce website</h2>
+            <ul>
+              <li>Whether you’re building a fresh website or using an e-commerce platform</li>
+              <li> When it comes to these functions, you shouldn’t neglect a single one of them.</li>
+              <li>Once again, this only works well when your e-commerce website works well.</li>
+            </ul>
+          </div>
+        <div class="image-container1">
+            <img src="e11.jpg" alt="Image" class="resized-image1">
+        </div>
+      </div>
+      <div class="container12">
+        <div class="text-container12">
+            <p>Many open-source e-commerce platforms exist. These platforms give you the most control over your e-commerce website, but they require knowledge and skill in website development. You gain an incredible amount of flexibility because it’s you and your team doing the design and customization.
+
+                However, unless you’re a programmer or software developer, the complex nature of dealing with these platforms can give you more problems than you expect. There are some platforms that offer a little more user-friendliness. The cost to build, maintain, and operate your own platform can become cost prohibitive, depending on the resources your business has access to.
+                
+                Use a cloud-based e-commerce service
+                Using cloud-based software-as-a-seUsing cloud-based software-as-a-service (SaaS) solutions can help you get your e-commerce business up and running fast. These services work especially well for those just starting an e-commerce business. They’re typically easy to use, scalable, and often have a pay-as-you-go model that can help you keep costs in check.
+
+                What you lose out on is control over the platform. Yet, you don’t have to deal with a lot of the hassle that can come from updating software, testing functions, maintaining hardware, patching vulnerabilities, dealing with the foundational level of implementation, and a host of other things that come from running the platform yourself.</p>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="image-container2">
+            <img src="e4.jpg" alt="Image" class="resized-image2">
+        </div>
+        <div class="box1">
+            <h2>E-commerce website development for your company</h2>
+            <p1>
+                Now that you understand the importance of e-commerce website design and how it benefits your business, you can start building a smartly designed website with a website builder. Use these e-commerce website design tips as a starting point.
+                
+                Mailchimp's website builder allows you to customize your design, sell online and manage orders from a clean and responsive interface, and use the built-in marketing tools to launch your e-commerce business to greatness. Our platform provides SEO tools, analytics, forms, and everything else you need to start your e-commerce business right now</p1>
+          </div>
+</div>
+      <div class="container0">
+        <ul h>Stay Updated with How2Recycle</h>
+            <a href="https://www.facebook.com/How2Recycle"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/how2recycle_/"><i class="fa-brands fa-instagram"></i></a>
+        <ul><a href="data.html">database</a></ul>
+        <ul><a href="service.html">service</a></ul>
+        <ul><a href="state.html">statement</a></ul>
+        <ul><a href="privacy.html">privacy_policy</a></ul>
+        </ul>
+      </div>
+    <script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hidesidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c618e882ef.js" crossorigin="anonymous"></script>
+</body>
+</html>
